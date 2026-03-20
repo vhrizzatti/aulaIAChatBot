@@ -22,7 +22,7 @@ def responder_dieta(obj):
         return "Tente manter uma alimentação equilibrada com proteínas, carboidratos e gorduras boas."
 
 while True:
-    msg = input("\nVocê: ").lower()
+    msg = input("\nQuer dica de treino, dieta, uma dica ou sair ?: ").lower()
 
     if "treino" in msg:
         print("Bot:", responder_treino(objetivo))
@@ -32,9 +32,6 @@ while True:
 
     elif "dica" in msg:
         print("Bot: Beba bastante água, durma bem e mantenha consistência")
-
-    elif "nome" in msg:
-        print(f"Bot: Seu nome é {nome}")
 
     elif "sair" in msg:
         print("Bot: Encerrando. Bons treinos")
