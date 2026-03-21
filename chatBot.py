@@ -1,6 +1,6 @@
 print("ChatBot Fitness iniciado")
 
-nome = input("Qual seu nome? ")
+nome = input("Qual seu nome?\n")
 print(f"Prazer, {nome}! Vou te ajudar com treino e dieta")
 
 objetivo = input("Qual seu objetivo? (emagrecer/ganhar massa): ").lower()
@@ -22,7 +22,7 @@ def responder_dieta(obj):
         return "Tente manter uma alimentação equilibrada com proteínas, carboidratos e gorduras boas."
 
 while True:
-    msg = input("\nQuer dica de treino, dieta, uma dica ou sair ?: ").lower()
+    msg = input("\nQuer saber sobre treino, dieta, uma dica ou encerrar chat ?(Digite um por vez)\n").lower()
 
     if "treino" in msg:
         print("Bot:", responder_treino(objetivo))
@@ -33,7 +33,7 @@ while True:
     elif "dica" in msg:
         print("Bot: Beba bastante água, durma bem e mantenha consistência")
 
-    elif "sair" in msg:
+    elif "encerrar chat" in msg:
         print("Bot: Encerrando. Bons treinos")
         break
 
